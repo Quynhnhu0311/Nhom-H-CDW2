@@ -34,3 +34,6 @@ Route::get('/blogDetail', function () {
 Route::get('/cart', function () {
     return view('shopping-cart');
 });
+Route::get('/checkout', function () {
+    return view('checkout');
+});
