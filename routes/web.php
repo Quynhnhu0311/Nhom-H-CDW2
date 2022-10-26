@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MyController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,30 +14,33 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
-Route::get('/products', function () {
-    return view('shop');
-});
-Route::get('/detailProduct', function () {
-    return view('shop-details');
-});
-Route::get('/contact', function () {
-    return view('contact');
-});
-Route::get('/blogs', function () {
-    return view('blog');
-});
-Route::get('/blogDetail', function () {
-    return view('blog-details');
-});
-Route::get('/cart', function () {
-    return view('shopping-cart');
-});
-Route::get('/login', function () {
-    return view('login');
-});
-Route::get('/register', function () {
-    return view('register');
-});
+// Route::get('/', function () {
+//     return view('index');
+// });
+// Route::get('/shop', function () {
+//     return view('shop');
+// });
+// Route::get('/detailProduct', function () {
+//     return view('shop-details');
+// });
+// Route::get('/contact', function () {
+//     return view('contact');
+// });
+// Route::get('/blogs', function () {
+//     return view('blog');
+// });
+// Route::get('/blogDetail', function () {
+//     return view('blog-details');
+// });
+// Route::get('/cart', function () {
+//     return view('shopping-cart');
+// });
+// Route::get('/login', function () {
+//     return view('login');
+// });
+// Route::get('/register', function () {
+//     return view('register');
+// });
+
+//Show all Page
+Route::get('/{name?}',[MyController::class, 'index']);
