@@ -16,40 +16,15 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('index');
-// });
-// Route::get('/shop', function () {
-//     return view('shop');
-// });
-// Route::get('/detailProduct', function () {
-//     return view('shop-details');
-// });
-// Route::get('/contact', function () {
-//     return view('contact');
-// });
-// Route::get('/blogs', function () {
-//     return view('blog');
-// });
-// Route::get('/blogDetail', function () {
-//     return view('blog-details');
-// });
-// Route::get('/cart', function () {
-//     return view('shopping-cart');
-// });
-// Route::get('/login', function () {
-//     return view('login');
-// });
-// Route::get('/register', function () {
-//     return view('register');
-// });
 
-//Show all Page
-//Route::get('/{name?}',[MyController::class, 'index']);
+/* =====Front-End===== */
 
 //Products
 Route::get('/tat-ca-san-pham', [ProductController::class,'all_products']);
+
 Route::get('/', [HomeController::class,'home']);
-// Route::get('/', function () {
-//     return view('index');
-// });
+
+Route::get('/shop-details/{id}/{type_id}', [HomeController::class, 'show_details']);
+
+//Show all Page
+Route::get('/{name?}',[MyController::class, 'index']);
