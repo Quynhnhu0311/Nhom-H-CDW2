@@ -20,7 +20,7 @@ class CreateProductsTable extends Migration
             $table->string('product_img',150);
             $table->string('product_description',500);
             $table->double('type_id',11);
-            $table->double('menu_id',11);
+            $table->double('manu_id',11);
             $table->timestamps();
         });
     }

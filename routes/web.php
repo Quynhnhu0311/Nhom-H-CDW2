@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MyController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -43,4 +45,11 @@ use App\Http\Controllers\MyController;
 // });
 
 //Show all Page
-Route::get('/{name?}',[MyController::class, 'index']);
+//Route::get('/{name?}',[MyController::class, 'index']);
+
+//Products
+Route::get('/tat-ca-san-pham', [ProductController::class,'all_products']);
+Route::get('/', [HomeController::class,'home']);
+// Route::get('/', function () {
+//     return view('index');
+// });
