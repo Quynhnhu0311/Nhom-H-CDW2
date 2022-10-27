@@ -35,7 +35,16 @@
     <div class="offcanvas-menu-wrapper">
         <div class="offcanvas__option">
             <div class="offcanvas__links">
-                <a href="#">Sign in</a>
+                <?php
+                    $name = Session::get('name');
+                    if($name){
+                        echo $name;
+                        echo '<li><a href="/logout-user">Log out</a></li>';
+                    }
+                    else{
+                        echo '<a href="#">Sign in</a>';
+                    }
+                ?>
                 <a href="#">FAQs</a>
             </div>
             <div class="offcanvas__top__hover">
@@ -73,7 +82,20 @@
                     <div class="col-lg-6 col-md-5">
                         <div class="header__top__right">
                             <div class="header__top__links">
-                                <a href="{{ url ('/login')}}">Sign in</a>
+                                <?php
+                                    $name = Session::get('name');
+                                    if($name){
+                                        echo '<div class="header__top__hover">
+                                                <span>'.$name.'<i class="arrow_carrot-down"></i></span>
+                                                <ul>
+                                                    <a href="/logout-user"><li>LOG OUT</li></a>
+                                                </ul>
+                                            </div>';
+                                    }
+                                    else{
+                                        echo '<a href="/login">Sign in</a>';
+                                    }
+                                ?>
                                 <a href="#">FAQs</a>
                             </div>
                             <div class="header__top__hover">
@@ -84,6 +106,7 @@
                                     <li>USD</li>
                                 </ul>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -219,6 +242,8 @@
     <script src="js/mixitup.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+
+
 </body>
 
 </html>
