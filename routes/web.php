@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MyController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,40 +17,14 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('index');
-// });
-// Route::get('/shop', function () {
-//     return view('shop');
-// });
-// Route::get('/detailProduct', function () {
-//     return view('shop-details');
-// });
-// Route::get('/contact', function () {
-//     return view('contact');
-// });
-// Route::get('/blogs', function () {
-//     return view('blog');
-// });
-// Route::get('/blogDetail', function () {
-//     return view('blog-details');
-// });
-// Route::get('/cart', function () {
-//     return view('shopping-cart');
-// });
-// Route::get('/login', function () {
-//     return view('login');
-// });
-// Route::get('/register', function () {
-//     return view('register');
-// });
-
-//Show all Page
-//Route::get('/{name?}',[MyController::class, 'index']);
-
 //Products
 Route::get('/tat-ca-san-pham', [ProductController::class,'all_products']);
 Route::get('/', [HomeController::class,'home']);
-// Route::get('/', function () {
-//     return view('index');
-// });
+
+//Login
+Route::post('/login-user', [UserController::class,'login_user']);
+Route::get('/logout-user', [UserController::class,'logout_user']);
+
+
+//Show all Page
+Route::get('/{name?}',[MyController::class, 'index']);
