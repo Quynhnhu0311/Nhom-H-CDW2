@@ -23,7 +23,8 @@ class Products extends Seeder
                                     - Kiểu dáng: Ống rộng, ống suông
                                      - Màu: Xanh',
             'type_id' => 1,
-            'menu_id' => 1
+            'menu_id' => 1,
+            'feature_id' => 1
         ]);
 
         \DB::table('products')->insert([
@@ -32,7 +33,8 @@ class Products extends Seeder
             'product_img' => '8f6ae4c0feb11ac429bc21eec5739fe6.jpg_400x400q75.jpg_.jpg',
             'product_description' => 'Quần jean ngắn đen rách phối họa tiết LV chất vải dày co dãn mẫu mới nhất cao cấp',
             'type_id' => 1,
-            'menu_id' => 1
+            'menu_id' => 1,
+            'feature_id' => 2
         ]);
 
         \DB::table('products')->insert([
@@ -41,7 +43,8 @@ class Products extends Seeder
             'product_img' => '0d0a257f35a881447376cd19f2a761cd.jpg_400x400q75.jpg_.jpg',
             'product_description' => 'Quần jean nam xanh loang màu chất bò,mẫu mới,vải dày đẹp,form chuẩn,phối LV cao cấp-AHFASHION',
             'type_id' => 1,
-            'menu_id' => 1
+            'menu_id' => 1,
+            'feature_id' => 3
         ]);
 
         \DB::table('products')->insert([
@@ -50,7 +53,8 @@ class Products extends Seeder
             'product_img' => 'a2b9cb5b9b1063ed2241bdf6d6c4a592.jpg_400x400q75.jpg_.jpg',
             'product_description' => 'Quần Dài GC Nam Chất Thô Thêu Logo GC Siêu Đẹp - Quần Dài LV Nam Chất Thô Thêu Logo LV Cực Chất',
             'type_id' => 1,
-            'menu_id' => 1
+            'menu_id' => 1,
+            'feature_id' => 3
         ]);
 
         \DB::table('products')->insert([
@@ -59,7 +63,8 @@ class Products extends Seeder
             'product_img' => '07d98f16a8878f52a5b9e7400299c14a.jpg_400x400q75.jpg_.jpg',
             'product_description' => 'Quần Ngố LV Nam Thêu Hoạ Tiết hoa LV Siêu Đẹp - mát mẻ - Quần Ngố LV Nam Mẫu mới',
             'type_id' => 1,
-            'menu_id' => 1
+            'menu_id' => 1,
+            'feature_id' => 2
         ]);
 
         \DB::table('products')->insert([
@@ -68,7 +73,8 @@ class Products extends Seeder
             'product_img' => '14da5782103479fdc6ffffd11466f78b.jpg_400x400q75.jpg_.jpg',
             'product_description' => 'Áo thun nam polo siêu cấp LOIUS.VUITTEN có túi thêu LV có cổ tay ngắn vải cotton co dãn tốt chất mát thấm hút mồ hôi tốt 2 màu trắng đen cao cấp',
             'type_id' => 2,
-            'menu_id' => 1
+            'menu_id' => 1,
+            'feature_id' => 1
         ]);
 
         \DB::table('products')->insert([
@@ -77,7 +83,8 @@ class Products extends Seeder
             'product_img' => '47d700037d05077a0c73783173a85b0f.jpg_400x400q75.jpg_.jpg',
             'product_description' => 'Áo thun nam cổ tròn 2 màu trắng đen phối họa tiết LV đẹp thời trang cao cấp hàng chuẩn shop Quang_thời_trang',
             'type_id' => 2,
-            'menu_id' => 1
+            'menu_id' => 1,
+            'feature_id' => 2
         ]);
 
         \DB::table('products')->insert([
@@ -86,7 +93,8 @@ class Products extends Seeder
             'product_img' => 'ef8565ae9c01884d5cc03d26f542c2c6.jpg_400x400q75.jpg_.jpg',
             'product_description' => 'Áo thun Unisex nam nữ LV in phối xanh trắng - đen đen form rộng đẹp tay lỡ kiểu hàn quốc vải cotton',
             'type_id' => 2,
-            'menu_id' => 1
+            'menu_id' => 1,
+            'feature_id' => 1
         ]);
 
         \DB::table('products')->insert([
@@ -95,7 +103,8 @@ class Products extends Seeder
             'product_img' => '59d0fb74fed3a37fd1d50d0a07b347d4.jpg_400x400q75.jpg_.jpg',
             'product_description' => 'Áo sơ mi nam dài tay phối loang in họa tiết LV chữ nổi sang trọng chất vải đũi cao cấp mẫu mới giá rẻ DV-FASHION',
             'type_id' => 2,
-            'menu_id' => 1
+            'menu_id' => 1,
+            'feature_id' => 3
         ]);
 
         \DB::table('products')->insert([
@@ -104,7 +113,8 @@ class Products extends Seeder
             'product_img' => '301df71c14e8bd62e5c2374a5d16ceee.jpg_400x400q75.jpg_.jpg',
             'product_description' => 'Áo thun nam thêu LV POLO có cổ tay ngắn vải cotton thoáng mát-dày dặn-chuẩn form-sang trọng-AHFASHION',
             'type_id' => 2,
-            'menu_id' => 1
+            'menu_id' => 1,
+            'feature_id' => 3
         ]);
 
         \DB::table('products')->insert([
@@ -113,7 +123,8 @@ class Products extends Seeder
             'product_img' => 'S8a20adcbf36d4b0d854382fc5b53ff166.jpg_400x400q75.jpg_.jpg',
             'product_description' => 'Túi xách nữ cầm tay kèm dây đeo chéo hoạ tiết LV',
             'type_id' => 3,
-            'menu_id' => 1
+            'menu_id' => 3,
+            'feature_id' => 1
         ]);
 
         \DB::table('products')->insert([
@@ -122,7 +133,8 @@ class Products extends Seeder
             'product_img' => 'c3a4637be4c5e350c199bfb5e88d167c.jpg_400x400q75.jpg_.jpg',
             'product_description' => 'Túi đeo chéo Combo 2 túi LV dành cho nam Fullbox - Túi xách combo 2 túi cao cấp dành cho Nam',
             'type_id' => 3,
-            'menu_id' => 1
+            'menu_id' => 1,
+            'feature_id' => 2
         ]);
         \DB::table('products')->insert([
             'product_name' => 'Túi tròn họa tiết túi hộp',
@@ -130,7 +142,8 @@ class Products extends Seeder
             'product_img' => '76338c78196028e2aff1bb13f1e06cd9.jpg_400x400q75.jpg_.jpg',
             'product_description' => 'Túi tròn họa tiết túi hộp tròn mini đeo chéo cầm tay hàng đẹp TRONLVMINI+ hình tự chụp',
             'type_id' => 3,
-            'menu_id' => 1
+            'menu_id' => 1,
+            'feature_id' => 1
         ]);
         \DB::table('products')->insert([
             'product_name' => 'Balo nam LV',
@@ -138,7 +151,8 @@ class Products extends Seeder
             'product_img' => 'S149a9cd1fcd640678a678e99202193a9d.jpg_400x400q75.jpg_.jpg',
             'product_description' => 'Balo nam Lv hàng da cao cấp tiện dụng đa năng',
             'type_id' => 3,
-            'menu_id' => 1
+            'menu_id' => 1,
+            'feature_id' => 3
         ]);
         \DB::table('products')->insert([
             'product_name' => 'Balo caro LV',
@@ -146,7 +160,8 @@ class Products extends Seeder
             'product_img' => 'S2c987d416e9246f28eaed1c2e52146fay.jpg_400x400q75.jpg_.jpg',
             'product_description' => 'Balo caro LV thời trang hoạ tiết in hình cá tính - Cặp đa năng',
             'type_id' => 3,
-            'menu_id' => 1
+            'menu_id' => 1,
+            'feature_id' => 2
         ]);
         \DB::table('products')->insert([
             'product_name' => 'Dép lV quai ngang',
@@ -154,7 +169,8 @@ class Products extends Seeder
             'product_img' => 'dc606884d48464eee29722d5b34e417f.jpg_400x400q75.jpg_.jpg',
             'product_description' => 'Dép lv quai ngang đế cao su quai da thật 100%, dép nam lv Fullbox.',
             'type_id' => 4,
-            'menu_id' => 1
+            'menu_id' => 1,
+            'feature_id' => 3
         ]);
         \DB::table('products')->insert([
             'product_name' => 'Dép Sục',
@@ -162,7 +178,8 @@ class Products extends Seeder
             'product_img' => 'Se6fc7c281c0346818701b2e9316387ffi.jpg_400x400q75.jpg_.jpg',
             'product_description' => 'Dép Sục Bít Mũi Dép Đế Bằng Dễ Phối Mùa Hè Mẫu Mới 2022 Đi Bên Ngoài Cho Nữ Giày Giày Lười Dép Lê Nổi Tiếng Trên Mạng Giày Sành Điệu',
             'type_id' => 4,
-            'menu_id' => 1
+            'menu_id' => 1,
+            'feature_id' => 1
         ]);
         \DB::table('products')->insert([
             'product_name' => 'Giày lười nam',
@@ -170,7 +187,8 @@ class Products extends Seeder
             'product_img' => 'Sb4aba44d249d42c2a4a84f4749ed2295c.jpg_400x400q75.jpg_.jpg',
             'product_description' => 'Giày lười nam LV da sần siêu hot - Giày moca nam Lv',
             'type_id' => 4,
-            'menu_id' => 1
+            'menu_id' => 1,
+            'feature_id' => 2
         ]);
         \DB::table('products')->insert([
             'product_name' => 'Giày sneaker nam LV',
@@ -178,7 +196,8 @@ class Products extends Seeder
             'product_img' => 'efaacf6f34619513b3aae43cabb7edac.jpg_400x400q75.jpg_.jpg',
             'product_description' => 'Giày sneaker nam LV nhiều màu cá tính viền khâu',
             'type_id' => 4,
-            'menu_id' => 1
+            'menu_id' => 1,
+            'feature_id' => 2
         ]);
         \DB::table('products')->insert([
             'product_name' => 'Giày slipon nam LV',
@@ -186,7 +205,8 @@ class Products extends Seeder
             'product_img' => 'S9b6388d871dd4a6b874796705230a8551.jpg_400x400q75.jpg_.jpg',
             'product_description' => 'Giày slipon nam LV thêu logo caro xen kẽ - Giày lười nam LV',
             'type_id' => 4,
-            'menu_id' => 1
+            'menu_id' => 1,
+            'feature_id' => 3
         ]);
         \DB::table('products')->insert([
             'product_name' => 'Dây Chuyền Mặt Chữ LV',
@@ -194,7 +214,8 @@ class Products extends Seeder
             'product_img' => 'b7f54c3cac9b281638749496aadaaa75.jpg_400x400q75.jpg_.jpg',
             'product_description' => 'Dây Chuyền Mặt Chữ Lv Xinh Xắn - TRANG SỨC BẠC TNJ CAM KẾT HÀNG CHUẨN ẢNH, CHẤT LƯỢNG TỐT, PHỤC VỤ TẬN TÌNH, CHU ĐÁO',
             'type_id' => 5,
-            'menu_id' => 1
+            'menu_id' => 1,
+            'feature_id' => 1
         ]);
         \DB::table('products')->insert([
             'product_name' => 'Mặt dây chuyền nam bạc LV',
