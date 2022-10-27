@@ -176,7 +176,6 @@
                         </div>
                     </div>
                     @endforeach
-
                     @foreach($hotSales as $row => $hotSales)
                     <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
                         <div class="product__item">
