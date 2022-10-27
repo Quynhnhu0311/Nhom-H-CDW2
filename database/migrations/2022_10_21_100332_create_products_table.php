@@ -21,6 +21,7 @@ class CreateProductsTable extends Migration
             $table->string('product_description',500);
             $table->double('type_id',11);
             $table->double('manu_id',11);
+            $table->double('feature_id',11);
             $table->timestamps();
         });
     }
