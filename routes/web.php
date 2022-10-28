@@ -22,6 +22,8 @@ use App\Http\Controllers\HomeController;
 //Products
 Route::get('/tat-ca-san-pham', [ProductController::class,'all_products']);
 
+Route::get('/shop-details/{id}', [HomeController::class, 'show_details']);
+
 Route::get('/', [HomeController::class,'home']);
 
 Route::get('/shop-details/{id}/{type_id}', [HomeController::class, 'show_details']);

@@ -29,7 +29,6 @@
     <div id="preloder">
         <div class="loader"></div>
     </div>
-
     <!-- Offcanvas Menu Begin -->
     <div class="offcanvas-menu-overlay"></div>
     <div class="offcanvas-menu-wrapper">
@@ -73,7 +72,21 @@
                     <div class="col-lg-6 col-md-5">
                         <div class="header__top__right">
                             <div class="header__top__links">
-                                <a href="{{ url ('/login')}}">Sign in</a>
+                                <?php
+                                    $name = Session::get('name');
+                                    $id = Session::get('id');
+                                    if($id){
+                                        echo '<div class="header__top__hover">
+                                                <span>'.$name.'<i class="arrow_carrot-down"></i></span>
+                                                <ul>
+                                                    <a href="/logout-user"><li>LOG OUT</li></a>
+                                                </ul>
+                                            </div>';
+                                    }
+                                    else{
+                                        echo '<a href="/login">Sign in</a>';
+                                    }
+                                ?>
                                 <a href="#">FAQs</a>
                             </div>
                             <div class="header__top__hover">
@@ -93,7 +106,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-3">
                     <div class="header__logo">
-                        <a href="{{ url ('index') }}"><img src="img/logo.png" alt=""></a>
+                        <a href="{{ url ('index') }}"><img src="{{ asset ('/img/logo.png') }}" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
@@ -117,8 +130,8 @@
                 </div>
                 <div class="col-lg-3 col-md-3">
                     <div class="header__nav__option">
-                        <a href="#" class="search-switch"><img src="img/icon/search.png" alt=""></a>
-                        <a href="#"><img src="img/icon/heart.png" alt=""></a>
+                        <a href="#" class="search-switch"><img src="{{ asset ('img/icon/search.png') }}" alt=""></a>
+                        <a href="#"><img src="{{ asset ('img/icon/heart.png') }}" alt=""></a>
                         <a href="{{url ('shopping-cart') }}"><img src="img/icon/cart.png" alt=""> <span>0</span></a>
                         <div class="price">$0.00</div>
                     </div>
