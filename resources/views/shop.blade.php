@@ -207,7 +207,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        @foreach($products as $row => $allProducts)
+                        @foreach($data as $row => $allProducts)
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
                                 <div class="product__item__pic set-bg" data-setbg="{{ asset('./img/product/'.$allProducts->product_img) }}">
@@ -245,6 +245,12 @@
                         </div>
                         @endforeach
                     </div>
+                    <div class="store-filter clearfix">
+                        <ul class="store-pagination">
+                            {{ $data->links() }}
+                        </ul>
+                    </div>
+                    
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="product__pagination">

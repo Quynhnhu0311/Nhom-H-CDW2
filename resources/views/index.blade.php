@@ -214,7 +214,9 @@
                     @endforeach
             </div>
         </div>
+        
     </section>
+    
     <!-- Product Section End -->
 
     <!-- Categories Section Begin -->

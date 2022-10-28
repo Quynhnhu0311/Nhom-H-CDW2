@@ -11,9 +11,11 @@ class MyController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($name = 'index')
+    public function index(/*$name = 'index'*/)
     {
-        return view($name);
+        // return view($name);
+        $data = Product::paginate(6);
+        return view('index',compact('data'));
     }
 
     /**
