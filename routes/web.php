@@ -17,28 +17,18 @@ use App\Http\Controllers\UserController;
 |
 */
 
-<<<<<<< HEAD
-=======
 
 /* =====Front-End===== */
-
->>>>>>> 3f9301f2baeb879c86953ee331874d091ef56e3f
 //Products
 Route::get('/tat-ca-san-pham', [ProductController::class,'all_products']);
+Route::get('/shop-details/{id}/{type_id}', [HomeController::class, 'show_details']);
 
+//Products
 Route::get('/', [HomeController::class,'home']);
 
-<<<<<<< HEAD
 //Login
 Route::post('/login-user', [UserController::class,'login_user']);
 Route::get('/logout-user', [UserController::class,'logout_user']);
 
-
 //Show all Page
 Route::get('/{name?}',[MyController::class, 'index']);
-=======
-Route::get('/shop-details/{id}/{type_id}', [HomeController::class, 'show_details']);
-
-//Show all Page
-Route::get('/{name?}',[MyController::class, 'index']);
->>>>>>> 3f9301f2baeb879c86953ee331874d091ef56e3f
