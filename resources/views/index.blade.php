@@ -111,7 +111,7 @@
                                 <ul class="product__hover">
                                     <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
                                     <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                    <li><a href="/detailProduct"><img src="img/icon/search.png" alt=""></a></li>
+                                    <li><a href="/shop-details/{{ $bestSellers->product_id }}/{{ $bestSellers->type_id}}"><img src="img/icon/search.png" alt=""></a></li>
                                 </ul>
                             </div>
                             <div class="product__item__text">
@@ -147,7 +147,7 @@
                                 <ul class="product__hover">
                                     <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
                                     <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                    <li><a href="/detailProduct"><img src="img/icon/search.png" alt=""></a></li>
+                                    <li><a href="/shop-details/{{ $newArrivals->product_id }}/{{ $newArrivals->type_id}}"><img src="img/icon/search.png" alt=""></a></li>
                                 </ul>
                             </div>
                             <div class="product__item__text">
@@ -183,7 +183,7 @@
                                 <ul class="product__hover">
                                     <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
                                     <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                    <li><a href="/detailProduct"><img src="img/icon/search.png" alt=""></a></li>
+                                    <li><a href="/shop-details/{{ $hotSales->product_id }}/{{ $hotSales->type_id}}"><img src="img/icon/search.png" alt=""></a></li>
                                 </ul>
                             </div>
                             <div class="product__item__text">

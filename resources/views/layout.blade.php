@@ -14,14 +14,14 @@
     rel="stylesheet">
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="{{ url ('css/bootstrap.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url ('css/font-awesome.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url ('css/elegant-icons.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url ('css/magnific-popup.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url ('css/nice-select.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url ('css/owl.carousel.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url ('css/slicknav.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url ('css/style.css') }}" type="text/css">
 </head>
 
 <body>
@@ -232,6 +232,7 @@
     <!-- Search End -->
 
     <!-- Js Plugins -->
+<<<<<<< HEAD
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.nice-select.min.js"></script>
@@ -244,6 +245,18 @@
     <script src="js/main.js"></script>
 
 
+=======
+    <script src="{{ url ('js/jquery-3.3.1.min.js') }}"></script>
+    <script src="{{ url ('js/bootstrap.min.js') }}"></script>
+    <script src="{{ url ('js/jquery.nice-select.min.js') }}"></script>
+    <script src="{{ url ('js/jquery.nicescroll.min.js') }}"></script>
+    <script src="{{ url ('js/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ url ('js/jquery.countdown.min.js') }}"></script>
+    <script src="{{ url ('js/jquery.slicknav.js') }}"></script>
+    <script src="{{ url ('js/mixitup.min.js') }}"></script>
+    <script src="{{ url ('js/owl.carousel.min.js') }}"></script>
+    <script src="{{ url ('js/main.js') }}"></script>
+>>>>>>> 3f9301f2baeb879c86953ee331874d091ef56e3f
 </body>
 
 </html>
