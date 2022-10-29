@@ -488,6 +488,9 @@ iframe {
     opacity: 1;
   }
 }
+.filter__controls li a {
+  color:#333333 !important;
+}
 
 
 

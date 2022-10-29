@@ -4,7 +4,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MyController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,21 +18,14 @@ use App\Http\Controllers\UserController;
 
 
 /* =====Front-End===== */
+
 //Products
 Route::get('/tat-ca-san-pham', [ProductController::class,'all_products']);
-Route::get('/shop-details/{id}/{type_id}', [HomeController::class, 'show_details']);
 
-<<<<<<< HEAD
-//Products
-=======
 Route::get('/shop-details/{id}', [HomeController::class, 'show_details']);
 
->>>>>>> fe9aac39bfae5ac1397248d2054ff5873ecdbd1d
 Route::get('/', [HomeController::class,'home']);
-
-//Login
-Route::post('/login-user', [UserController::class,'login_user']);
-Route::get('/logout-user', [UserController::class,'logout_user']);
+Route::get('feature/{feature_id}', [HomeController::class, 'show_product_home'])->name('showproducthome');
 
 //Show all Page
 Route::get('/{name?}',[MyController::class, 'index']);

@@ -13,13 +13,13 @@ class Features extends Seeder
      */
     public function run()
     {
-        \DB::table('features')->insert([
+        \DB::table('feature')->insert([
             'feature_name' => 'New Arrivals'
         ]);
-        \DB::table('features')->insert([
+        \DB::table('feature')->insert([
             'feature_name' => 'Best Sellers'
         ]);
-        \DB::table('features')->insert([
+        \DB::table('feature')->insert([
             'feature_name' => 'Hot Sales'
         ]);
     }

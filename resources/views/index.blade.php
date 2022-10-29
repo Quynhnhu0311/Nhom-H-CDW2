@@ -97,21 +97,25 @@
             <div class="row">
                 <div class="col-lg-12">
                     <ul class="filter__controls">
-                        <li class="active" data-filter=".best-sellers">Best Sellers</li>
-                        <li data-filter=".new-arrivals">New Arrivals</li>
-                        <li data-filter=".hot-sales">Hot Sales</li>
+                        @foreach($features as $feature)
+                        <li class="active"  data-filter=".best-sellers">
+                            <a href="{{ route('showproducthome',['feature_id' => $feature->feature_id]) }}">
+                                {{ $feature->feature_name }}
+                            </a>
+                        </li>
+                        @endforeach
                     </ul>
                 </div>
             </div>
             <div class="row product__filter">
-                    @foreach($bestSellers as $row => $bestSellers)
+                    @foreach($products_feature as $row => $bestSellers)
                     <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix best-sellers">
                         <div class="product__item">
-                            <div class="product__item__pic set-bg" data-setbg="{{ asset('./img/product/'.$bestSellers->product_img) }}">
+                            <div class="product__item__pic set-bg" data-setbg="{{ asset('/img/product/'.$bestSellers->product_img) }}">
                                 <ul class="product__hover">
                                     <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
                                     <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                    <li><a href="/shop-details/{{ $bestSellers->product_id }}"><img src="img/icon/search.png" alt=""></a></li>
+                                    <li><a href="/shop-details/{{ $bestSellers->product_id }}/{{ $bestSellers->type_id}}"><img src="img/icon/search.png" alt=""></a></li>
                                 </ul>
                             </div>
                             <div class="product__item__text">
@@ -140,83 +144,9 @@
                         </div>
                     </div>
                     @endforeach
-                    @foreach($newArrivals as $row => $newArrivals)
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
-                        <div class="product__item">
-                            <div class="product__item__pic set-bg" data-setbg="{{ asset('./img/product/'.$newArrivals->product_img) }}">
-                                <ul class="product__hover">
-                                    <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                    <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                    <li><a href="/shop-details/{{ $newArrivals->product_id }}/{{ $newArrivals->type_id}}"><img src="img/icon/search.png" alt=""></a></li>
-                                </ul>
-                            </div>
-                            <div class="product__item__text">
-                                <h6>{{ $newArrivals->product_name }}</h6>
-                                <a href="#" class="add-cart">+ Add To Cart</a>
-                                <div class="rating">
-                                    <i class="fa fa-star-o"></i>
-                                    <i class="fa fa-star-o"></i>
-                                    <i class="fa fa-star-o"></i>
-                                    <i class="fa fa-star-o"></i>
-                                    <i class="fa fa-star-o"></i>
-                                </div>
-                                <h5>{{ number_format($newArrivals->product_price) }}đ</h5>
-                                <div class="product__color__select">
-                                    <label for="pc-1">
-                                        <input type="radio" id="pc-1">
-                                    </label>
-                                    <label class="active black" for="pc-2">
-                                        <input type="radio" id="pc-2">
-                                    </label>
-                                    <label class="grey" for="pc-3">
-                                        <input type="radio" id="pc-3">
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    @endforeach
-                    @foreach($hotSales as $row => $hotSales)
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
-                        <div class="product__item">
-                            <div class="product__item__pic set-bg" data-setbg="{{ asset('./img/product/'.$hotSales->product_img) }}">
-                                <ul class="product__hover">
-                                    <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                    <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                    <li><a href="/shop-details/{{ $hotSales->product_id }}/{{ $hotSales->type_id}}"><img src="img/icon/search.png" alt=""></a></li>
-                                </ul>
-                            </div>
-                            <div class="product__item__text">
-                                <h6>{{ $hotSales->product_name }}</h6>
-                                <a href="#" class="add-cart">+ Add To Cart</a>
-                                <div class="rating">
-                                    <i class="fa fa-star-o"></i>
-                                    <i class="fa fa-star-o"></i>
-                                    <i class="fa fa-star-o"></i>
-                                    <i class="fa fa-star-o"></i>
-                                    <i class="fa fa-star-o"></i>
-                                </div>
-                                <h5>{{ number_format($hotSales->product_price) }}đ</h5>
-                                <div class="product__color__select">
-                                    <label for="pc-1">
-                                        <input type="radio" id="pc-1">
-                                    </label>
-                                    <label class="active black" for="pc-2">
-                                        <input type="radio" id="pc-2">
-                                    </label>
-                                    <label class="grey" for="pc-3">
-                                        <input type="radio" id="pc-3">
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    @endforeach
             </div>
         </div>
-        
     </section>
-    
     <!-- Product Section End -->
 
     <!-- Categories Section Begin -->

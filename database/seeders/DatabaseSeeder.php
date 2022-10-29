@@ -17,6 +17,5 @@ class DatabaseSeeder extends Seeder
         $this->call([Protypes::class]);
         $this->call([Manufactures::class]);
         $this->call([Features::class]);
-        $this->call([Users::class]);
     }
 }

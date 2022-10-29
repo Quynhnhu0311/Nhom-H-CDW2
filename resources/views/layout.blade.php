@@ -34,16 +34,7 @@
     <div class="offcanvas-menu-wrapper">
         <div class="offcanvas__option">
             <div class="offcanvas__links">
-                <?php
-                    $name = Session::get('name');
-                    if($name){
-                        echo $name;
-                        echo '<li><a href="/logout-user">Log out</a></li>';
-                    }
-                    else{
-                        echo '<a href="#">Sign in</a>';
-                    }
-                ?>
+                <a href="#">Sign in</a>
                 <a href="#">FAQs</a>
             </div>
             <div class="offcanvas__top__hover">
@@ -83,12 +74,8 @@
                             <div class="header__top__links">
                                 <?php
                                     $name = Session::get('name');
-<<<<<<< HEAD
-                                    if($name){
-=======
                                     $id = Session::get('id');
                                     if($id){
->>>>>>> fe9aac39bfae5ac1397248d2054ff5873ecdbd1d
                                         echo '<div class="header__top__hover">
                                                 <span>'.$name.'<i class="arrow_carrot-down"></i></span>
                                                 <ul>
@@ -110,7 +97,6 @@
                                     <li>USD</li>
                                 </ul>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -236,20 +222,6 @@
     <!-- Search End -->
 
     <!-- Js Plugins -->
-<<<<<<< HEAD
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/jquery.nicescroll.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.countdown.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/mixitup.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
-
-
-=======
     <script src="{{ url ('js/jquery-3.3.1.min.js') }}"></script>
     <script src="{{ url ('js/bootstrap.min.js') }}"></script>
     <script src="{{ url ('js/jquery.nice-select.min.js') }}"></script>
@@ -257,10 +229,9 @@
     <script src="{{ url ('js/jquery.magnific-popup.min.js') }}"></script>
     <script src="{{ url ('js/jquery.countdown.min.js') }}"></script>
     <script src="{{ url ('js/jquery.slicknav.js') }}"></script>
-    <script src="{{ url ('js/mixitup.min.js') }}"></script>
+    <!-- <script src="{{ url ('js/mixitup.min.js') }}"></script> -->
     <script src="{{ url ('js/owl.carousel.min.js') }}"></script>
     <script src="{{ url ('js/main.js') }}"></script>
->>>>>>> 3f9301f2baeb879c86953ee331874d091ef56e3f
 </body>
 
 </html>

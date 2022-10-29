@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use DB;
 
 class MyController extends Controller
 {
@@ -11,11 +12,9 @@ class MyController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(/*$name = 'index'*/)
-    {
-        // return view($name);
-        $data = Product::paginate(6);
-        return view('index',compact('data'));
+    public function index($name = 'index')
+    {   
+        return view($name);
     }
 
     /**
