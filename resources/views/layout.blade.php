@@ -29,7 +29,6 @@
     <div id="preloder">
         <div class="loader"></div>
     </div>
-
     <!-- Offcanvas Menu Begin -->
     <div class="offcanvas-menu-overlay"></div>
     <div class="offcanvas-menu-wrapper">
@@ -84,7 +83,12 @@
                             <div class="header__top__links">
                                 <?php
                                     $name = Session::get('name');
+<<<<<<< HEAD
                                     if($name){
+=======
+                                    $id = Session::get('id');
+                                    if($id){
+>>>>>>> fe9aac39bfae5ac1397248d2054ff5873ecdbd1d
                                         echo '<div class="header__top__hover">
                                                 <span>'.$name.'<i class="arrow_carrot-down"></i></span>
                                                 <ul>
@@ -116,7 +120,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-3">
                     <div class="header__logo">
-                        <a href="{{ url ('index') }}"><img src="img/logo.png" alt=""></a>
+                        <a href="{{ url ('index') }}"><img src="{{ asset ('/img/logo.png') }}" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
@@ -140,8 +144,8 @@
                 </div>
                 <div class="col-lg-3 col-md-3">
                     <div class="header__nav__option">
-                        <a href="#" class="search-switch"><img src="img/icon/search.png" alt=""></a>
-                        <a href="#"><img src="img/icon/heart.png" alt=""></a>
+                        <a href="#" class="search-switch"><img src="{{ asset ('img/icon/search.png') }}" alt=""></a>
+                        <a href="#"><img src="{{ asset ('img/icon/heart.png') }}" alt=""></a>
                         <a href="{{url ('shopping-cart') }}"><img src="img/icon/cart.png" alt=""> <span>0</span></a>
                         <div class="price">$0.00</div>
                     </div>
